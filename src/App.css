@@ -1,0 +1,22 @@
+/* Minimal utility CSS to complement Tailwind */
+
+.status { padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.8rem; }
+.status.fake { background: #2b0000; color: #ff6262; border: 1px solid #ff6262; }
+.status.notfake { background: #001a00; color: #5aff7a; border: 1px solid #5aff7a; }
+.status.uncertain { background: #0a0a12; color: #b1b6ff; border: 1px solid #787cff; }
+
+.detail-image { max-width: 320px; border-radius: 8px; border: 1px solid #333; }
+.fake { color: #ff6262; }
+.notfake { color: #5aff7a; }
+
+.btn { padding: 0.4rem 0.8rem; border: 1px solid #555; border-radius: 6px; text-decoration: none; color: #fff; }
+.btn.primary { background: #646cff; border-color: #646cff; }
+
+.badge { padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid #444; }
+.badge.fake { border-color: #ff6262; color: #ff8080; }
+.badge.notfake { border-color: #5aff7a; color: #86ff9a; }
+
+.pagination { display: flex; align-items: center; gap: 0.35rem; margin: 1rem 0; }
+.pagination button { padding: 0.3rem 0.6rem; border-radius: 6px; border: 1px solid #555; background: #111; color: #fff; }
+.pagination button.active { background: #646cff; border-color: #646cff; }
+.pagination-info { margin-left: 0.5rem; color: #aaa; }
