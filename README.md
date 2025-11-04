@@ -82,3 +82,7 @@ vercel --prod
 ## License
 
 Public educational sample. Replace group details with your own before submission.
+ 
+## Deployment Note
+
+- Commits must be non-empty and use a verified GitHub email to appear in contribution and deployment graphs. A trivial README update like this ensures a real change for tracking.
