@@ -1,7 +1,7 @@
 # Multi-domain Anti-Fake Information
 Projec
 
-A simple sports-focused system to crowd-verify information and rumors about sports events, teams, and players. Users can view items, filter by status (All / Fake / Not Fake / Uncertain), open details, see comments and vote with reasoning and optional evidence image links. Votes determine the computed status of each item. This app uses mock data and client-side storage only.
+A simple multi-domain system to crowd-verify information and rumors across different domains (sports, music, gaming, weather, economics, anime, drama). Users can view items, filter by status (All / Fake / Not Fake / Uncertain) and domain, open details, see comments, and vote with reasoning and optional evidence image links. Votes determine the computed status of each item. This app uses mock data and client-side storage only.
 
 ## Group Information
 
@@ -18,23 +18,23 @@ A simple sports-focused system to crowd-verify information and rumors about spor
 
 ## Project Goal
 
-Project goal: <<fill in your information>>
+Goal: Build a demo application that aggregates, classifies, and crowd‑verifies rumors and claims across multiple domains. The system supports domain tagging and filtering, evidence source links, community voting, and transparent status computation (Fake / Not Fake / Uncertain).
 
-Hints (choose one domain or combine several):
-- Fake information about sports (transfers, match-fixing, injuries, coaching changes)
-- Fake information about music (concert cancellations, artist scandals, forged announcements)
-- Fake information about gaming (release delays, studio closures, e-sports controversies)
-- Fake information about weather (extreme events rumors, city-wide shutdown claims)
-- Fake information about economics (market crashes, policy rumors, company insolvency hoaxes)
-- Fake information about anime (production delays, cast changes, licensing disputes)
-- Fake information about drama/TV (season cancellations, cast departures, ratings manipulations)
+Scope examples (choose one domain or combine several):
+- Sports: transfers, match-fixing, injuries, coaching changes
+- Music: concert cancellations, artist scandals, forged announcements
+- Gaming: release delays, studio closures, e-sports controversies
+- Weather: extreme events rumors, city-wide shutdown claims
+- Economics: market crashes, policy rumors, company insolvency hoaxes
+- Anime: production delays, cast changes, licensing disputes
+- Drama/TV: season cancellations, cast departures, ratings manipulations
 
 ## Features
 
-- Home page: paginated list of 100 English sports items with filters (All / Fake / Not Fake / Uncertain) and adjustable items per page.
+- Home page: paginated list of 300 English items across multiple domains with filters (All / Fake / Not Fake / Uncertain) and a domain selector; adjustable items per page.
 - Details page: full item details, status, reporter, date/time, and image link (clickable) with embedded preview.
-- Details page also includes a structured Sources section listing league office, club, and sports media references.
-- Comments page: paginated list of comments and vote results.
+- Details page includes a structured Sources section (official statements, professional media reports, social posts & corrections).
+- Comments page: paginated list of comments and vote results (expanded comments per item).
 - Loading skeletons: Home and Comments show lightweight loading skeletons for better UX.
 - Vote page: select Fake or Not Fake, add a comment and an optional image URL; updates are stored locally and reflected immediately.
 - Status is computed from vote counts (mock base votes + your session votes).
