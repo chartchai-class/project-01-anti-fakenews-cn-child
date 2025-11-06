@@ -86,14 +86,14 @@ export default function Home() {
       ) : (
         <ul className="grid gap-3">
           {pageItems.map((n) => (
-            <li key={n.id} className="border border-gray-700 rounded-lg p-3">
+            <li key={n.id} className="border border-gray-700 rounded-lg p-3 bg-black/30 transition hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-900/20">
               <div className="flex items-center justify-between">
                 <Link to={`/news/${n.id}`} className="font-semibold text-white hover:text-indigo-300">{n.topic}</Link>
-                <span className="status text-red-500">{n.status}</span>
+                <span className={`status ${n.status === 'Fake' ? 'fake' : n.status === 'Not Fake' ? 'notfake' : 'uncertain'}`}>{n.status}</span>
               </div>
               <p className="text-gray-300 mt-2">{n.shortDetail}</p>
               <div className="flex flex-wrap gap-3 text-sm text-gray-400 mt-1">
-                <span>Domain: {n.domain}</span>
+                <span className="badge uppercase">{n.domain}</span>
                 <span>Reporter: {n.reporter}</span>
                 <span>Reported: {new Date(n.reportedAt).toLocaleString()}</span>
               </div>

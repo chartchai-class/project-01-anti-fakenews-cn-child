@@ -1,6 +1,6 @@
 /* Minimal utility CSS to complement Tailwind */
 
-.status { padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.8rem; }
+.status { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; }
 .status.fake { background: #2b0000; color: #ff6262; border: 1px solid #ff6262; }
 .status.notfake { background: #001a00; color: #5aff7a; border: 1px solid #5aff7a; }
 .status.uncertain { background: #0a0a12; color: #b1b6ff; border: 1px solid #787cff; }
@@ -9,14 +9,17 @@
 .fake { color: #ff6262; }
 .notfake { color: #5aff7a; }
 
-.btn { padding: 0.4rem 0.8rem; border: 1px solid #555; border-radius: 6px; text-decoration: none; color: #fff; }
+.btn { padding: 0.45rem 0.9rem; border: 1px solid #555; border-radius: 8px; text-decoration: none; color: #fff; background: #111; transition: all 0.2s ease; }
+.btn:hover { border-color: #646cff; box-shadow: 0 6px 12px -6px rgba(100,108,255,0.35); transform: translateY(-1px); }
 .btn.primary { background: #646cff; border-color: #646cff; }
+.btn.primary:hover { filter: brightness(1.05); box-shadow: 0 6px 14px -6px rgba(100,108,255,0.45); }
 
 .badge { padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid #444; }
 .badge.fake { border-color: #ff6262; color: #ff8080; }
 .badge.notfake { border-color: #5aff7a; color: #86ff9a; }
 
 .pagination { display: flex; align-items: center; gap: 0.35rem; margin: 1rem 0; }
-.pagination button { padding: 0.3rem 0.6rem; border-radius: 6px; border: 1px solid #555; background: #111; color: #fff; }
+.pagination button { padding: 0.3rem 0.6rem; border-radius: 8px; border: 1px solid #555; background: #111; color: #fff; transition: all 0.2s ease; }
+.pagination button:hover { border-color: #646cff; box-shadow: 0 6px 12px -6px rgba(100,108,255,0.35); }
 .pagination button.active { background: #646cff; border-color: #646cff; }
 .pagination-info { margin-left: 0.5rem; color: #aaa; }

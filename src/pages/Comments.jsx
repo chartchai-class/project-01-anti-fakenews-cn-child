@@ -46,7 +46,7 @@ export default function Comments() {
       {loading ? (
         <ul className="grid gap-3">
           {Array.from({ length: 6 }).map((_, idx) => (
-            <li key={idx} className="border border-gray-700 rounded-lg p-3 animate-pulse">
+            <li key={idx} className="border border-gray-700 rounded-lg p-3 animate-pulse bg-black/25">
               <div className="flex gap-2 items-center">
                 <div className="h-4 w-16 bg-gray-700 rounded" />
                 <div className="h-4 w-24 bg-gray-700 rounded" />
@@ -59,7 +59,7 @@ export default function Comments() {
       ) : (
         <ul className="grid gap-3">
           {pageItems.map((c, idx) => (
-            <li key={idx} className="border border-gray-700 rounded-lg p-3">
+            <li key={idx} className="border border-gray-700 rounded-lg p-3 bg-black/30 transition hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-900/20">
               <div className="flex gap-2 items-center text-sm">
                 <span className={`badge ${c.isFake ? 'fake' : 'notfake'}`}>{c.isFake ? 'Fake' : 'Not Fake'}</span>
                 <span className="author text-gray-300">{c.author}</span>

@@ -23,11 +23,11 @@ export default function Vote() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl md:text-3xl font-semibold">Vote on: {item.topic}</h1>
-      <form className="vote-form" onSubmit={onSubmit}>
-        <fieldset className="border border-gray-700 rounded-lg p-3">
+      <form className="vote-form space-y-3" onSubmit={onSubmit}>
+        <fieldset className="border border-gray-700 rounded-lg p-3 bg-black/30">
           <legend className="text-sm text-gray-300">Your Vote</legend>
-          <label className="mr-4"><input type="radio" name="vote" value="fake" checked={choice === 'fake'} onChange={(e) => setChoice(e.target.value)} /> Fake</label>
-          <label><input type="radio" name="vote" value="notfake" checked={choice === 'notfake'} onChange={(e) => setChoice(e.target.value)} /> Not Fake</label>
+          <label className="mr-4 inline-flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5"><input type="radio" name="vote" value="fake" checked={choice === 'fake'} onChange={(e) => setChoice(e.target.value)} /> Fake</label>
+          <label className="inline-flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5"><input type="radio" name="vote" value="notfake" checked={choice === 'notfake'} onChange={(e) => setChoice(e.target.value)} /> Not Fake</label>
         </fieldset>
 
         <label className="block">
