@@ -37,6 +37,11 @@ A lightweight demo to crowd-verify and explain claims across multiple domains (s
 - Tailwind CSS 4 + PostCSS
 - ESLint (React Hooks/Refresh)
 
+**Team (小组信息)**
+- Rushford — 20232066
+- Rance — 20232038
+- S1mple — 20232035
+
 **Project Structure**
 ```
 src/
