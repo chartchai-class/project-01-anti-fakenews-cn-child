@@ -77,3 +77,5 @@ src/
 - Theme switcher and broader responsive tuning
 - Backend integration (auth, persistence, source verification)
 
+**Video Demo**
+- [Watch on YouTube](https://youtu.be/snlc9JK9Qpo)
