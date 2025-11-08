@@ -3,7 +3,8 @@
 A lightweight demo to crowd-verify and explain claims across multiple domains (sports, music, gaming, weather, economics, anime, drama). The app supports domain tagging and filtering, evidence links, community voting and comments, and transparent status computation (Fake / Not Fake / Uncertain). It uses mock data and client-side storage only (no backend).
 
 **Tips**
-Because we have already done it and pushed it directly, the amount of modifications that individuals push may differ from the actual situation
+1.Because we have already done it and pushed it directly, the amount of modifications that individuals push may differ from the actual situation
+2.We will divide the video speech into two parts, one is the presentation PPT, and the other is the webpage display
 
 **Project Goal**
 - Aggregate suspicious/rumor-like items across domains and surface transparent evidence.
@@ -81,4 +82,8 @@ src/
 - Backend integration (auth, persistence, source verification)
 
 **Video Demo**
-- [Watch on YouTube](https://youtu.be/snlc9JK9Qpo)
+- [Presentation PPT](https://youtu.be/snlc9JK9Qpo)
+- [Webpage display](https://www.youtube.com/watch?v=oWZuxVndIcw)
+
+**The URL of the deployed website**
+- [Website](https://project-01-anti-fakenews-cn-child.vercel.app/)
