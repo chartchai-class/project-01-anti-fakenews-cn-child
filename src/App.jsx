@@ -1,4 +1,5 @@
 import './index.css'
+import './App.css'
 import { Routes, Route, Link, Navigate } from 'react-router-dom'
 import { StoreProvider } from './store/StoreContext.jsx'
 import Home from './pages/Home.jsx'

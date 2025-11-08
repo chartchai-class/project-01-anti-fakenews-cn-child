@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useStore } from '../store/StoreContext.jsx'
 import Pagination from '../components/Pagination.jsx'
 
 export default function Home() {
+  const location = useLocation()
+  const annotate = new URLSearchParams(location.search).get('annotate') === '1'
   const { news, getStatusForNews } = useStore()
   const [filter, setFilter] = useState('all') // all | fake | nonfake | uncertain
   const [domain, setDomain] = useState('all') // all | <domain>
@@ -40,15 +42,16 @@ export default function Home() {
     <div className="space-y-4">
       <h1 className="text-2xl md:text-3xl font-semibold">News</h1>
       <div className="flex flex-wrap items-center gap-3">
-        <label>
+        <label className={annotate ? 'annotate-box' : ''}>
           Domain:
           <select value={domain} onChange={(e) => { setDomain(e.target.value); setPage(1) }}>
             {domainOptions.map(opt => (
               <option key={opt} value={opt}>{opt === 'all' ? 'All' : opt}</option>
             ))}
           </select>
+          {annotate ? <span className="annotation">① Domain 下拉 ←</span> : null}
         </label>
-        <label>
+        <label className={annotate ? 'annotate-box' : ''}>
           Filter:
           <select value={filter} onChange={(e) => { setFilter(e.target.value); setPage(1) }}>
             <option value="all">All</option>
@@ -56,14 +59,16 @@ export default function Home() {
             <option value="nonfake">Not Fake</option>
             <option value="uncertain">Uncertain</option>
           </select>
+          {annotate ? <span className="annotation">② Filter 下拉 ←</span> : null}
         </label>
-        <label>
+        <label className={annotate ? 'annotate-box' : ''}>
           Per page:
           <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1) }}>
             <option value={5}>5</option>
             <option value={10}>10</option>
             <option value={20}>20</option>
           </select>
+          {annotate ? <span className="annotation">③ Per page 下拉 ←</span> : null}
         </label>
       </div>
 
