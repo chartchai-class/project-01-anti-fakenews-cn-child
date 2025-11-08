@@ -2,6 +2,9 @@
 
 A lightweight demo to crowd-verify and explain claims across multiple domains (sports, music, gaming, weather, economics, anime, drama). The app supports domain tagging and filtering, evidence links, community voting and comments, and transparent status computation (Fake / Not Fake / Uncertain). It uses mock data and client-side storage only (no backend).
 
+**Tips**
+Because we have already done it and pushed it directly, the amount of modifications that individuals push may differ from the actual situation
+
 **Project Goal**
 - Aggregate suspicious/rumor-like items across domains and surface transparent evidence.
 - Build community consensus via votes and comments, aiming for explainable outcomes.
